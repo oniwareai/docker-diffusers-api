@@ -260,10 +260,10 @@ test(
             "num_inference_steps": 20,
         },
         "callInputs": {
-            # "MODEL_ID": "<override_default>",  # (default)
-            # "PIPELINE": "StableDiffusionPipeline",  # (default)
-            # "SCHEDULER": "DPMSolverMultistepScheduler",  # (default)
-            # "xformers_memory_efficient_attention": False,  # (default)
+            "MODEL_ID": "<override_default>",  # (default)
+            "PIPELINE": "StableDiffusionPipeline",  # (default)
+            "SCHEDULER": "DPMSolverMultistepScheduler",  # (default)
+            "xformers_memory_efficient_attention": False,  # (default)
         },
     },
 )
@@ -374,8 +374,8 @@ if True or os.getenv("USE_DREAMBOOTH"):
                 ),
                 # Option 1: upload to HuggingFace (see notes below)
                 # Make sure your HF API token has read/write access.
-                # "hub_model_id": "huggingFaceUsername/targetModelName",
-                # "push_to_hub": True,
+                "hub_model_id": "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/testeSergio1",
+                "push_to_hub": True,
             },
             "callInputs": {
                 "train": "dreambooth",
